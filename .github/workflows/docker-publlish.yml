@@ -2,7 +2,7 @@ name: Docker Build and Publish
 
 on:
   push:
-    branches: [ main ]  # 只保留一个主分支
+    branches: [ master ]  # 只保留一个主分支
     tags: 
       - v*  # 添加对标签推送的触发
   workflow_dispatch:
