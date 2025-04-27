@@ -45,4 +45,4 @@ jobs:
           file: ./Dockerfile
           cache-from: type=gha,scope=${{ github.ref }}-${{ github.workflow }}
           cache-to: type=gha,mode=max,scope=${{ github.ref }}-${{ github.workflow }}
-          platforms: linux/amd64,linux/arm64  # 添加ARM支持
+          platforms: linux/arm64  # 添加ARM支持
