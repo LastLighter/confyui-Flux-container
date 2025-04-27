@@ -4,6 +4,9 @@ FROM ghcr.io/saladtechnologies/comfyui-api:comfy0.3.29-api1.8.3-torch2.6.0-cuda1
 ENV BASE=""
 ENV MODEL_DIR="/opt/ComfyUI/models"
 
+# 添加构建参数接收令牌
+ARG HF_TOKEN=""
+
 # 安装 wget
 RUN apt-get update && apt-get install -y wget && \
     rm -rf /var/lib/apt/lists/*
